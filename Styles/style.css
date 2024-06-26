@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    font-size: 30px;
+}   
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+header{
+    
+    margin: auto;
+    margin-top: 7px;
+    margin-bottom: 3px;
+    width: 99%;
+    height: 7vh;
+    /* height: 40px; */
+    background-color: rgb(255, 244, 204);
+    display: flex;
+    justify-content: center;
+    border-radius:6px;
+    border: 3px solid black;
+}
+
+.navbar{
+    background-color: rgb(255, 244, 204);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 99%;
+}
+.login{
+    width: 18%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+#login{
+    margin:0px 5px;
+    cursor: pointer;
+    height: 80%;
+    width: 40%;
+    background-color: white;
+    border: 2px solid orange;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+#login:hover{
+    background-color:rgb(130, 130, 130);
+}
+#signup{
+    cursor: pointer;
+    height: 80%;
+    width: 40%;
+    background-color: rgb(255, 211, 128);
+    border: 2px solid orange;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+#signup:hover{
+    background-color: rgb(136, 113, 71);
+}
+
+.middle{
+    background-color:white;
+    height:91vh;
+    width: 100vw;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.left-side{
+    border: 3px solid black;
+    height: 99%;
+    width: 19%;
+    background-color: rgb(255, 244, 204);
+    border-radius:6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.right-side{
+    border: 3px solid black;
+    height: 99%;
+    width: 79%;
+    background-color: rgb(255, 244, 204);
+    border-radius:6px;
+}
+.widgets{
+    border-bottom: 3px solid black;
+    border-radius: 6px;
+    background-color:rgb(255, 244, 204) ;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.widcons{
+    background-color:rgb(255, 211, 128) ;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: 0.2s;;
+}
+.widcons:hover{
+    background-color: rgb(136, 113, 71);
+}
+.add-task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    flex-wrap: wrap;
+}
+#add-btn{
+    font-size:15px ;
+    cursor: pointer;
+    background-color: rgb(255, 211, 128);
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 70%;
+    width: 50%;
+    transition: 0.2s;
+}
+#add-btn:hover{
+    background-color: rgb(136, 113, 71);
+}
+.tasks-list{
+    width: 100%;
+    height: 80%;
+}
+.tasks{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: auto;
+    height: 70px;
+    width: 90%;
+    margin-top: 10px;
+}
+.status{
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+#task-title{
+    font-weight: bold;
+    width: 50%;
+}
+.right-side{
+
+}
+.task-name{
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 90%;
+    height: 100px;
+    background-color: rgb(209, 209, 209);
+}
+#task-input{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 70%;
+    padding: 7px 20px;
+}
+.desc{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: auto;
+    margin-top: 10px;
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 90%;
+    height: 60vh;
+    background-color: rgb(209, 209, 209);
+}
+#description{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 70%;
+    height: 90%;
+    padding: 7px 20px;
+}
+
+.btnss{
+    display: flex;
+    justify-content: space-around;
+}
+.config{
+    cursor: pointer;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-top: 50px;
+    background-color:  rgb(255, 211, 128);
+    transition: 0.2s;
+}
+.config:hover{
+    background-color: rgb(136, 113, 71);
+}
