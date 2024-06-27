@@ -169,6 +169,10 @@ header{
 .right-side{
 
 }
+.available-tasks{
+    display: none;
+    
+}
 .task-name{
     margin: auto;
     margin-top: 10px;
@@ -221,4 +225,18 @@ header{
 }
 .config:hover{
     background-color: rgb(136, 113, 71);
+}
+li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: auto;
+    height: 70px;
+    width: 90%;
+    margin-top: 10px;
+}
+.texting{
+    display: none;
 }

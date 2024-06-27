@@ -24,7 +24,7 @@
         <div class="left-side">
                 <div class="widgets">
                     <img src="Assets/Icons/search.png" alt="" width="50px" height="50px" class="widcons">
-                    <img src="Assets/Icons/home.png" alt="" width="50px" height="50px" class="widcons">
+                    <img src="Assets/Icons/home.png" alt="" width="50px" height="50px" class="widcons" id="home-btn">
                     <img src="Assets/Icons/setting.png" alt="" width="50px" height="50px" class="widcons">
                 </div>
 
@@ -32,51 +32,68 @@
                     <button id="add-btn">ADD TASK</button>
                 </div>
                 
+
+
                 <div class="tasks-list">
-                    <div class="tasks">
-                        <p style="font-size: 20px;">#1</p>
-                        <h1 id="task-title">Title</h1>
-                        <p style="font-size: 20px;">Date</p>
-                        <div class="status"></div>
-                    </div>
-                    <div class="tasks">
-                        <p style="font-size: 20px;">#1</p>
-                        <h1 id="task-title">Title</h1>
-                        <p style="font-size: 20px;">Date</p>
-                        <div class="status"></div>
-                    </div>
-                    <div class="tasks">
-                        <p style="font-size: 20px;">#1</p>
-                        <h1 id="task-title">Title</h1>
-                        <p style="font-size: 20px;">Date</p>
-                        <div class="status"></div>
-                    </div>
+                    <ul class="unordered-tasks">
+                        
+                    </ul>
                 </div>
+
+                <!-- <div class="tasks-list">
+                    <a href="#">
+                        <div class="tasks">
+                        <p style="font-size: 20px;">#1</p>
+                        <h1 id="task-title">Title</h1>
+                        <p style="font-size: 20px;">Date</p>
+                        <div class="status"></div>
+                        </div>
+                    </a>
+                        
+                    <div class="tasks">
+                        <p style="font-size: 20px;">#1</p>
+                        <h1 id="task-title">Title</h1>
+                        <p style="font-size: 20px;">Date</p>
+                        <div class="status"></div>
+                    </div>
+                    <div class="tasks">
+                        <p style="font-size: 20px;">#1</p>
+                        <h1 id="task-title">Title</h1>
+                        <p style="font-size: 20px;">Date</p>
+                        <div class="status"></div>
+                    </div>
+                </div> -->
         </div>
 
         <div class="right-side">
-            <!-- <h1>WHAT ARE YOU WAITING FOR ?</h1>
-            <p>START ADDING YOUR TASKS !</p> -->
-
-            <div class="task-name">
-                <p>Task Title</p>
-                <input type="text" id="task-input" placeholder="Enter Task Title">
-            </div>
-
-            <div class="desc">
-                <p style="margin: 10px;">Description</p>
-                <textarea id="description" style="margin: 10px;" placeholder="Enter Your Task Description"></textarea>
+            <div id="texting">
+                <h1>WHAT ARE YOU WAITING FOR ?</h1>
+                <p>START ADDING YOUR TASKS !</p>
             </div>
             
-            <div class="btnss">
-                <button class="config">Cancel</button>
-                <button class="config"><input type="date">Due Date</button>
-                <button class="config">Add Task</button>
+
+            <div id="available-tasks" class="available-tasks">
+                <div class="task-name">
+                    <p>Task Title</p>
+                    <input type="text" id="task-input" placeholder="Enter Task Title">
+                </div>
+    
+                <div class="desc">
+                    <p style="margin: 10px;">Description</p>
+                    <textarea id="description" style="margin: 10px;" placeholder="Enter Your Task Description"></textarea>
+                </div>
+                
+                <div class="btnss">
+                    <button class="config">Cancel</button>
+                    <button class="config"><input type="date">Due Date</button>
+                    <button class="config">Add Task</button>
+                </div>
             </div>
+            
 
         </div>
     </div>
 
-
+    <script src="Scripts/script.js"></script>
 </body>
 </html>
