@@ -166,9 +166,6 @@ header{
     font-weight: bold;
     width: 50%;
 }
-.right-side{
-
-}
 .available-tasks{
     display: none;
     
@@ -200,20 +197,23 @@ header{
     border: 3px solid black;
     border-radius: 5px;
     width: 90%;
-    height: 55vh;
+    height: 50vh;
     background-color: rgb(209, 209, 209);
 }
 #description{
     border: 2px solid black;
     border-radius: 5px;
     width: 70%;
-    height: 90%;
+    height: 95%;
     padding: 7px 20px;
 }
 
 .btnss{
+    height: 10vh;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 .config{
     cursor: pointer;
@@ -227,6 +227,7 @@ header{
     background-color: rgb(136, 113, 71);
 }
 li{
+    cursor: pointer;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -263,7 +264,7 @@ li{
     background-color: rgb(209, 209, 209);
     display: flex;
     flex-direction: column;
-    height: 8vh;
+    height: 10vh;
     transition: 0.2s;
 }
 li:hover{
@@ -282,10 +283,13 @@ li:hover{
     justify-content: space-around;
 }
 #delete-btn{
+    text-align: center;
+    align-self: center;
+    height: 25px;
     background-color: white;
     border: 1.5px solid black;
     border-radius: 5px;
-    font-size: 17px;
+    font-size: 15px;
     cursor: pointer;
     padding: 2px;
     transition: 0.2s;

@@ -10,6 +10,11 @@ let assign = document.getElementById("assign-task");
 let date = document.getElementById("duedate");
 let addTaskBtn = document.getElementById("add-btn");
 let tasksList = document.querySelector("ul");
+let taskDesc=document.getElementById("task-desc");
+document.addEventListener("DOMContentLoaded", function() {
+    renderTasks();
+});
+
 if (tasks > 0) {
     texting.innerText = "FINISH YOUR TASKS !!";
 }
@@ -22,7 +27,7 @@ function renderTasks() {
     tasksList.innerHTML = "";
     tasks.forEach((task, index) => {
         tasksList.innerHTML += `
-            <li>
+            <li id="task-desc" onclick="desc()">
                 <div class="cleaning">
                     <p>#${index + 1}</p>
                     <p>${task.name}</p>
@@ -77,6 +82,11 @@ function homie() {
     if (tasks.length > 0) {
         texting.innerText = "FINISH YOUR TASKS !!";
     }
+}
+
+function desc(){
+    availableTasks.classList.add("available-tasks");
+    texting.classList.remove("texting");
 }
 
 renderTasks();
