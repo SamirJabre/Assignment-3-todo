@@ -256,3 +256,40 @@ li{
 .date-config{
     font-size: 20px;
 }
+.assigned{
+    font-size: 20px;
+}
+li{
+    background-color: rgb(209, 209, 209);
+    display: flex;
+    flex-direction: column;
+    height: 8vh;
+    transition: 0.2s;
+}
+li:hover{
+    background-color: rgb(136, 113, 71);
+}
+.cleaning{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.delete{
+    font-size: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#delete-btn{
+    background-color: white;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 2px;
+    transition: 0.2s;
+}
+#delete-btn:hover{
+    background-color: grey;
+}
