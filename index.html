@@ -24,7 +24,7 @@
         <div class="left-side">
                 <div class="widgets">
                     <img src="Assets/Icons/search.png" alt="" width="50px" height="50px" class="widcons">
-                    <img src="Assets/Icons/home.png" alt="" width="50px" height="50px" class="widcons" id="home-btn">
+                    <img src="Assets/Icons/home.png" alt="" width="50px" height="50px" class="widcons" id="home-btn" onclick="homie()">
                     <img src="Assets/Icons/setting.png" alt="" width="50px" height="50px" class="widcons">
                 </div>
 
@@ -66,7 +66,7 @@
         </div>
 
         <div class="right-side">
-            <div id="texting">
+            <div id="texting" style="padding: 400px 700px;">
                 <h1>WHAT ARE YOU WAITING FOR ?</h1>
                 <p>START ADDING YOUR TASKS !</p>
             </div>
@@ -75,18 +75,23 @@
             <div id="available-tasks" class="available-tasks">
                 <div class="task-name">
                     <p>Task Title</p>
-                    <input type="text" id="task-input" placeholder="Enter Task Title">
+                    <input type="text" id="task-input" class="inpts" placeholder="Enter Task Title">
                 </div>
     
                 <div class="desc">
                     <p style="margin: 10px;">Description</p>
                     <textarea id="description" style="margin: 10px;" placeholder="Enter Your Task Description"></textarea>
                 </div>
+
+                <div class="assign">
+                    <p>Assign To</p>
+                    <input type="text" id="assign-task" class="inpts"  placeholder="*Optional">
+                </div>
                 
                 <div class="btnss">
-                    <button class="config">Cancel</button>
-                    <button class="config"><input type="date">Due Date</button>
-                    <button class="config">Add Task</button>
+                    <button class="config" onclick="homie()">Cancel</button>
+                    <button class="config"><input type="date" id="duedate">Due Date</button>
+                    <button class="config" type="submit" id="submit-btn">Add Task</button>
                 </div>
             </div>
             
